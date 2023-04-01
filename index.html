@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Present Continuous</title>
+</head>
+<body>
+    <audio id="boing" src="assets/boing.wav"></audio>
+    <audio id="confirm" src="assets/confirm.mp3"></audio>
+    <audio id="click" src="assets/click.wav"></audio>
+    <audio id="putzing" src="assets/putzing.mp3"></audio>
+    <div class="super-container">
+        
+        <div class="video">
+            <div class="heading"><h1>Drag and Drop the words</h1></div> 
+            <video id="video" src="assets/putzing_video.mp4" autoplay width="350px"></video>
+            <div class="button-play">
+                <button class="buttons" id="btnPlay">Play</button>
+                <button class="buttons" id="btnTranslate">Translate</button>
+                <button id="btnReset" class="buttons">Reset</button>
+                
+            </div>
+        </div>
+        <div class="container">
+            <div class="words" draggable="true" ondragstart="drag(event)" id="2">feels</div>
+            <div class="words" draggable="true" ondragstart="drag(event)" id="4">just</div>
+            <div class="words" draggable="true" ondragstart="drag(event)" id="1">She</div>
+            <div class="words" draggable="true" ondragstart="drag(event)" id="5">putzing around</div>
+            <div class="words" draggable="true" ondragstart="drag(event)" id="3">like</div>
+        </div>
+        <img src="assets/drag.png" alt="">
+        <div class="container">
+            <div class="figura">
+                <div class="box" id="0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <h2></h2>
+            </div>
+            <div class="figura">
+                <div class="box" id="1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <h2></h2>
+            </div>
+            <div class="figura">
+                <div class="box" id="2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <h2></h2>
+            </div>
+            <div class="figura">
+                <div class="box" id="3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <h2></h2>
+            </div>
+            <div class="figura">
+                <div class="box" id="4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <h2></h2>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
