@@ -28,7 +28,7 @@ btnTranslate.addEventListener('click', function() {
 
 //Drag and Drop Events
 
-let dragger = ["", "", "", "", ""]
+let dragger = ["", "", "", "", "", ""]
 
 function allowDrop(ev) {
     ev.preventDefault()
@@ -46,9 +46,9 @@ function drop(ev) {
     }
 
 
-if (dragger[0] != "" && dragger[1] != "" && dragger[2] != "" && dragger[3] != "" && dragger[4] != "") {
+if (dragger[0] != "" && dragger[1] != "" && dragger[2] != "" && dragger[3] != "" && dragger[4] != "" && dragger[5] != "") {
 
-    if (dragger[0] == "1" && dragger[1] == "2" && dragger[2] == "3" && dragger[3] == "4" && dragger[4] == "5") {
+    if (dragger[0] == "1" && dragger[1] == "2" && dragger[2] == "3" && dragger[3] == "4" && dragger[4] == "5" && dragger[5] == "6") {
         let audio = document.getElementById('confirm')
         audio.play()
         let question = document.querySelector('h1')
